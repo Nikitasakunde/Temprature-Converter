@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    height: 100%;
+    text-align: center;
+    background-image: url(./image/back.webp), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+header{
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+}
+
+header h1{
+    color: coral;
+}
+
+header p{
+    color:rgb(250, 252, 252);
+    font-size: larger;
+}
+
+
+.container{
+    display: inline-block;
+    width: 300px;
+    min-width: 500px;
+    margin: 100px 30px;
+    padding: 20px;
+    border-radius: 20px; 
+    
+}
+
+label{
+    font-size: 17px;
+    color: rgb(8, 8, 95);
+    font-family: fantasy;
+
+}
+
+input{
+    padding: 3px 3px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: yellow;
+    transition: .3s border-color;
+}
+
+input:hover{
+    border-color: rgb(61, 16, 224);
+}
+
+#temp{
+    height: 25px;
+    width: 60px;
+}
+
+select{
+    height: 25px;
+    width: fit-content;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#submitbtn{
+    height: 2.5rem;
+    width: 6rem;
+    color: rgb(238, 255, 0);
+    background-color: rgb(255, 140, 0);
+    border-radius: 20px;
+    border-color: rgb(255, 140, 0);
+    font-size: 20px;
+    
+}
+
+#resultContainer{
+    margin: 15px 50px;
+    padding: 20px;
+    background-color: antiquewhite;
+    font-size: 25px;
+    border-radius: 5px;
+    border-color: blueviolet;
+}
+
+#footer {
+    position: fixed;
+    color: rgb(8, 8, 95);
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    font-size: large;
+    font-family: fantasy;
+
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="icon" href="./image/thermo.jpg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="top">
+            <h1>Temperature Converter</h1>
+            <br>
+        </div>
+    </header>
+
+  
+    <!-- body -->
+    <section class="container">
+        <form onsubmit="calcTemp();return false;">
+            <label for="temp">Please enter the value of temperature : </label>
+            <input type="number" name="temp" id="temp" step="any" value="0.0">
+            
+
+            <select id="givenscale" name="givenscale" >
+                <option style="display:none;" selected disabled>Choose scale</option>
+                <option value="°C">° Celcius</option>
+                <option value="°F">° Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            <br>
+
+            <label for="tempscale">Choose a scale for conversion:</label>
+            <select id="tempscale" name="tempscale">
+                <option style="display:none;" selected disabled>Choose scale</option>
+                <option value="°C">° Celcius</option>
+                <option value="°F">° Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            <br>
+
+            <input type="submit" name="temp" id="submitbtn" value="Convert">
+            
+            <br>
+            
+            <div id="resultContainer"></div>
+        </form>
+    </section>
+
+    <!-- footer section -->
+    <footer id="footer">
+        <p>Created by Nikita</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
